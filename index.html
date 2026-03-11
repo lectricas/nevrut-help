@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Помощь — NeVrut</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f9fafb;
+      color: #111827;
+      padding: 40px 16px 64px;
+    }
+    .page {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .logo-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 6px;
+    }
+    .logo-row img {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      color: #111827;
+    }
+    .tagline {
+      font-size: 15px;
+      color: #6b7280;
+      margin-bottom: 36px;
+      line-height: 1.5;
+    }
+    .section {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #f3f4f6;
+    }
+    ol {
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    ol li {
+      font-size: 14px;
+      color: #374151;
+      line-height: 1.5;
+    }
+    .step-img {
+      display: inline-block;
+      vertical-align: middle;
+      height: 32px;
+      border-radius: 4px;
+      margin: 0 2px;
+      border: 1px solid #e5e7eb;
+    }
+    .plans {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .plan {
+      flex: 1;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 14px 16px;
+      text-align: center;
+    }
+    .plan-name {
+      font-size: 13px;
+      color: #6b7280;
+      margin-bottom: 4px;
+    }
+    .plan-price {
+      font-size: 22px;
+      font-weight: 700;
+      color: #111827;
+    }
+    .plan-currency {
+      font-size: 14px;
+      font-weight: 500;
+      color: #6b7280;
+    }
+    .payment-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .payment-qr {
+      width: 300px;
+      height: 300px;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+      object-fit: contain;
+    }
+    .payment-text {
+      font-size: 14px;
+      color: #374151;
+      line-height: 1.6;
+      text-align: center;
+    }
+    .payment-text p { margin-bottom: 8px; }
+    .support {
+      margin-top: 14px;
+      font-size: 13px;
+      color: #6b7280;
+    }
+    .support a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .support a:hover { text-decoration: underline; }
+    .refund {
+      margin-top: 14px;
+      font-size: 13px;
+      color: #374151;
+      background: #f0fdf4;
+      border-left: 3px solid #22c55e;
+      padding: 8px 12px;
+      border-radius: 0 6px 6px 0;
+    }
+    .faq {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .faq-item {}
+    .faq-q {
+      font-size: 14px;
+      font-weight: 600;
+      color: #111827;
+      margin-bottom: 4px;
+    }
+    .faq-a {
+      font-size: 14px;
+      color: #6b7280;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <div class="logo-row">
+      <img src="icons/icon48.png" alt="NeVrut">
+      <h1>NeVrut</h1>
+    </div>
+    <p class="tagline">Анализирует отзывы на Ozon с помощью ИИ и даёт честный ответ вместо накрученного рейтинга.</p>
+
+    <div class="section">
+      <h2>Как начать</h2>
+      <ol>
+        <li>Откройте страницу товара на Ozon</li>
+        <li>
+          Найдите расширение NeVrut и закрепите его через кнопку
+          <img src="icons/pin.png" alt="закрепить" class="step-img">
+        </li>
+        <li>Нажмите на иконку расширения → <strong>«Прочитать отзывы»</strong></li>
+        <li>Подождите 15–30 секунд — результат готов</li>
+      </ol>
+    </div>
+
+    <div class="section">
+      <h2>Код доступа</h2>
+      <p style="font-size:14px;color:#374151;margin-bottom:16px;">Расширение платное. Часть денег за подписку уходит на оплату ChatGPT.</p>
+
+      <div class="plans">
+        <div class="plan">
+          <div class="plan-name">Неделя</div>
+          <div class="plan-price">100 <span class="plan-currency">₽</span></div>
+        </div>
+        <div class="plan">
+          <div class="plan-name">Месяц</div>
+          <div class="plan-price">200 <span class="plan-currency">₽</span></div>
+        </div>
+      </div>
+
+      <div class="payment-block">
+        <img src="icons/payment.jpg" alt="QR-код оплаты" class="payment-qr">
+        <div class="payment-text">
+          <p>Отсканируйте QR-код и оплатите через Тбанк.</p>
+          <p>В сообщении к переводу укажите ваш ник в Telegram — код придёт туда.</p>
+          <div class="support">Поддержка: <a href="https://t.me/chadgpt6" target="_blank">@chadgpt6</a></div>
+        </div>
+      </div>
+
+      <div class="refund"><strong>Не понравилось — верну деньги полностью, без вопросов.</strong></div>
+    </div>
+
+    <div class="section">
+      <h2>Часто задаваемые вопросы</h2>
+      <div class="faq">
+        <div class="faq-item">
+          <div class="faq-q">Почему долго грузится?</div>
+          <div class="faq-a">Ozon отдаёт отзывы постепенно — это занимает 15–30 секунд.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Работает на других сайтах?</div>
+          <div class="faq-a">Пока только Ozon. Wildberries и Яндекс Карты — в планах.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">А как же мобилки?</div>
+          <div class="faq-a">Пока расширение только для компьютеров. Поддержка iOS и Android — в планах.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Код перестал работать?</div>
+          <div class="faq-a">Напишите в Telegram — исправим: <a href="https://t.me/chadgpt6" target="_blank" style="color:#2563eb;text-decoration:none;">@chadgpt6</a></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
